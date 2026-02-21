@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css text background</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h2>Text Properties</h2>
+
+<p>
+Text properties are used to control the appearance of text like color, size, alignment, spacing, decoration, etc.
+</p>
+
+<br>
+
+<ol>
+<li><b>color</b></li>
+</ol>
+
+<p>Changes the text color</p>
+
+<fieldset>
+<legend>Example</legend>
+
+&lt;p style="color: blue;"&gt;This text is blue.&lt;/p&gt;
+</fieldset>
+
+<table>
+<tr>
+<td>You can use:</td>
+</tr>
+
+<tr>
+<td>Color name → red</td>
+</tr>
+
+<tr>
+<td>Hex → #ff0000</td>
+</tr>
+
+<tr>
+<td>RGB → rgb(255,0,0)</td>
+</tr>
+</table>
+
+<br>
+
+<ol start="2">
+<li><b>text-align</b></li>
+</ol>
+
+<p>Aligns text horizontally.</p>
+
+<fieldset>
+<legend>Example</legend>
+
+&lt;p style="text-align: center;"&gt;This text is centered.&lt;/p&gt;
+</fieldset>
+
+<strong>Values</strong>
+
+<ul>
+<li>left</li>
+<li>Right</li>
+<li>Center</li>
+<li>Justify</li>
+</ul>
+
+<br>
+
+<ol start="3">
+<li><b>text-decoration</b></li>
+</ol>
+
+<p>Adds underline, overline, line-through.</p>
+
+<fieldset>
+<legend>Example</legend>
+
+&lt;p style="text-decoration: underline;"&gt;Underlined text&lt;/p&gt;
+&lt;p style="text-decoration: line-through;"&gt;Striked text&lt;/p&gt;
+</fieldset>
+
+<br>
+
+<ol start="4">
+<li><b>text-transform</b></li>
+</ol>
+
+<p>Changes letter case.</p>
+
+<fieldset>
+
+&lt;p style="text-transform: uppercase;"&gt;hello world&lt;/p&gt;
+&lt;p style="text-transform: lowercase;"&gt;HELLO WORLD&lt;/p&gt;
+&lt;p style="text-transform: capitalize;"&gt;hello world&lt;/p&gt;
+
+</fieldset>
+
+<br>
+
+<ol start="5">
+<li><b>font-size</b></li>
+</ol>
+
+<p>Changes text size.</p>
+
+<fieldset>
+&lt;p style="font-size: 20px;"&gt;Big text&lt;/p&gt;
+</fieldset>
+
+<b>Other units</b>
+
+<ul>
+<li>px</li>
+<li>em</li>
+<li>rem</li>
+<li>%</li>
+</ul>
+
+<br>
+
+<ol start="6">
+<li><b>font-family</b></li>
+</ol>
+
+<p>Changes font style.</p>
+
+<fieldset>
+<p style="font-family: 'Courier New', monospace;">
+This is monospace text.
+</p>
+</fieldset>
+
+<br>
+
+<ol start="7">
+<li><b>font-weight</b></li>
+</ol>
+
+<p>Controls thickness of text</p>
+
+<fieldset>
+&lt;p style="font-weight: bold;"&gt;Bold text&lt;/p&gt;
+&lt;p style="font-weight: 300;"&gt;Light text&lt;/p&gt;
+</fieldset>
+
+<br>
+
+<ol start="8">
+<li><b>letter-spacing</b></li>
+</ol>
+
+<p>Space between letters.</p>
+
+<fieldset>
+&lt;p style="letter-spacing: 3px;">Spaced Letters&lt;/p&gt;
+</fieldset>
+
+<br>
+
+<ol start="9">
+<li><b>line-height</b></li>
+</ol>
+
+<p>Controls space between lines.</p>
+
+<fieldset>
+&lt;p style="line-height: 30px;"&gt;
+This is line one.<br>
+This is line two.
+&lt;/p&gt;
+</fieldset>
+
+<br>
+
+<ol start="10">
+<li><b>text-shadow</b></li>
+</ol>
+
+<p>Adds shadow to text.</p>
+
+<fieldset>
+&lt;p style="text-shadow: 2px 2px 5px gray;"&gt;
+Shadow Text
+&lt;/p&gt;
+</fieldset>
+
+</section>
+
+<hr>
+
+<section>
+
+<ol>
+<li> Background Properties</li>
+</ol>
+
+<p>Explain what it does</p>
+
+<fieldset>
+<legend>Example</legend>
+
+&lt;p style="background-color: yellow;"&gt;
+This has yellow background
+&lt;/p&gt;
+</fieldset>
+
+<table>
+<tr>
+<td>Mention values:</td>
+</tr>
+
+<tr><td>color name</td></tr>
+<tr><td>hex</td></tr>
+<tr><td>rgb</td></tr>
+</table>
+
+<br>
+
+<ol start="2">
+<li><b>background-image</b></li>
+</ol>
+
+<p>Used to add image as background</p>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+p {
+  background-image: url("image.jpg");
+}
+</pre>
+</fieldset>
+
+<br>
+
+<ol start="3">
+<li><b>background-repeat</b></li>
+</ol>
+
+<table>
+<tr><td>Explain values:</td></tr>
+<tr><td>repeat (default)</td></tr>
+<tr><td>no-repeat</td></tr>
+<tr><td>repeat-x</td></tr>
+<tr><td>repeat-y</td></tr>
+</table>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+background-repeat: no-repeat;
+</pre>
+</fieldset>
+
+<br>
+
+<ol start="4">
+<li>background-position</li>
+</ol>
+
+<p>Controls image position.</p>
+
+<table>
+<tr><td>Values:</td></tr>
+<tr><td>left</td></tr>
+<tr><td>right</td></tr>
+<tr><td>center</td></tr>
+<tr><td>top</td></tr>
+<tr><td>bottom</td></tr>
+</table>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+background-position: center;
+</pre>
+</fieldset>
+
+<br>
+
+<ol start="5">
+<li><b>background-size</b></li>
+</ol>
+
+<p>Very important.</p>
+
+<table>
+<tr><td>Values:</td></tr>
+<tr><td>cover</td></tr>
+<tr><td>contain</td></tr>
+<tr><td>px values</td></tr>
+</table>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+background-size: cover;
+</pre>
+</fieldset>
+
+<br>
+
+<ol start="6">
+<li>background-attachment</li>
+</ol>
+
+<table>
+<tr><td>Explain:</td></tr>
+<tr><td>scroll (default)</td></tr>
+<tr><td>fixed</td></tr>
+</table>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+background-attachment: fixed;
+</pre>
+</fieldset>
+
+<br>
+
+<ol start="7">
+<li>background (Shorthand Property)</li>
+</ol>
+
+<p>Very important (intermediate level)</p>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+background: yellow url("image.jpg") no-repeat center cover;
+</pre>
+</fieldset>
+
+<p>Explain that this combines all background properties.</p>
+
+</section>
+
+<hr>
+
+<a href="css.html">Back</a>
+<footer>
+    <p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

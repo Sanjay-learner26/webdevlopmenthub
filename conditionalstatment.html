@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>conditionalstatements</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h4>CONDITIONAL STATEMENTS</h4>
+
+<p>Conditional statements in JavaScript control the flow of execution, allowing the program to perform different actions based on whether a specified condition is true or false. These conditions are typically evaluated using comparison and logical operators.</p>
+
+<strong>The main types of conditional statements in JavaScript are:</strong>
+
+<h5>if Statement</h5>
+
+<p>In JavaScript, the if statement executes a block of code if a specified condition is true.</p>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+if(age > 18){
+  console.log("Adult");
+}
+</pre>
+</fieldset>
+
+<h5>if...else</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+if(age > 18){
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+</pre>
+</fieldset>
+
+<h4>else if</h4>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+if(age < 13){
+  console.log("Child");
+}
+else if(age < 18){
+  console.log("Teen");
+}
+else {
+  console.log("Adult");
+}
+</pre>
+</fieldset>
+
+<h4>Switch</h4>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let day = "Monday";
+
+switch(day){
+  case "Monday":
+    console.log("Start week");
+    break;
+}
+</pre>
+</fieldset>
+
+</section>
+
+<section>
+
+<h4>Loops</h4>
+
+<p>JavaScript provides several types of loops to repeatedly execute code.</p>
+
+<h5>For Loop</h5>
+
+<fieldset>
+<legend>Syntax</legend>
+<pre>
+for(initialization; condition; increment){
+  // code
+}
+</pre>
+</fieldset>
+
+<ul>
+<li>initialization → starting point</li>
+<li>condition → loop runs while condition is true</li>
+<li>increment → increases value each time</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+for(let i = 1; i <= 5; i++){
+  console.log(i);
+}
+</pre>
+</fieldset>
+
+<pre>
+Output:
+1 2 3 4 5
+</pre>
+
+<h5>while Loop</h5>
+
+<fieldset>
+<legend>Syntax</legend>
+<pre>
+while(condition){
+   // code
+}
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let i = 1;
+
+while(i <= 5){
+  console.log(i);
+  i++;
+}
+</pre>
+</fieldset>
+
+<h5>do...while Loop</h5>
+
+<fieldset>
+<legend>Syntax</legend>
+<pre>
+do{
+   // code
+} while(condition);
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let i = 1;
+
+do{
+  console.log(i);
+  i++;
+} while(i <= 5);
+</pre>
+</fieldset>
+
+<h5>for...of Loop</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let colors = ["red", "blue", "green"];
+
+for(let color of colors){
+  console.log(color);
+}
+</pre>
+</fieldset>
+
+<h5>for...in Loop</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let person = {
+  name: "Sanjay",
+  age: 22
+};
+
+for(let key in person){
+  console.log(key + " : " + person[key]);
+}
+</pre>
+</fieldset>
+
+<h5>break Statement</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+for(let i = 1; i <= 10; i++){
+  if(i === 5){
+    break;
+  }
+  console.log(i);
+}
+</pre>
+</fieldset>
+
+<pre>
+Output:
+1 2 3 4
+</pre>
+
+<h5>continue Statement</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+for(let i = 1; i <= 5; i++){
+  if(i === 3){
+    continue;
+  }
+  console.log(i);
+}
+</pre>
+</fieldset>
+
+<pre>
+Output:
+1 2 4 5
+</pre>
+
+<h5>Nested Loops</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+for(let i = 1; i <= 3; i++){
+  for(let j = 1; j <= 2; j++){
+    console.log(i, j);
+  }
+}
+</pre>
+</fieldset>
+
+</section>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+<footer>
+    <p>&copy; 2026 Web Development Hub </p>
+</footer>
+
+</body>
+</html>

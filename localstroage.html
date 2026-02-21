@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local Storage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h3>LOCAL STORAGE</h3>
+
+<p>This is where your website starts remembering data.</p>
+
+<h4>What is LocalStorage?</h4>
+
+<p>LocalStorage is a browser storage system.</p>
+
+<h4>It allows you to:</h4>
+
+<ul>
+<li>Store data in browser</li>
+<li>Save user input</li>
+<li>Save cart items</li>
+<li>Save login state</li>
+</ul>
+
+<h5>Important:</h5>
+<p>Data stays even if you close the browser.</p>
+
+<h4>Why It Is Important?</h4>
+
+<pre>
+Without LocalStorage:
+If user refreshes page → all data disappears.
+</pre>
+
+<pre>
+With LocalStorage:
+Data stays saved.
+</pre>
+
+<b>Used in:</b>
+
+<ul>
+<li>Todo apps</li>
+<li>Shopping cart</li>
+<li>Dark mode toggle</li>
+<li>Login systems</li>
+</ul>
+
+<h4>Basic Methods of LocalStorage</h4>
+
+<p>LocalStorage stores data in key–value format.</p>
+
+<b>setItem() → Store Data</b>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+localStorage.setItem("name", "Sanjay");
+</pre>
+</fieldset>
+
+<b>getItem() → Get Data</b>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let name = localStorage.getItem("name");
+console.log(name);
+</pre>
+</fieldset>
+
+<b>removeItem() → Remove One Item</b>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+localStorage.removeItem("name");
+</pre>
+</fieldset>
+
+<b>clear() → Remove All</b>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+localStorage.clear();
+</pre>
+</fieldset>
+
+<h3>Important Rule</h3>
+
+<p>LocalStorage stores only STRINGS.</p>
+
+<strong>
+If you store array or object directly → it will break.
+</strong>
+
+<p>So we must use:</p>
+
+<ul>
+<li>JSON.stringify()</li>
+<li>JSON.parse()</li>
+</ul>
+
+<h4>Storing Object in LocalStorage</h4>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let user = {
+  name: "Sanjay",
+  age: 22
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+</pre>
+</fieldset>
+
+<h4>Getting Object Back</h4>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let storedUser = JSON.parse(localStorage.getItem("user"));
+console.log(storedUser.name);
+</pre>
+</fieldset>
+
+</section>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML APIs & Advanced</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>HTML APIs & Advanced</h1>
+
+<p>
+HTML5 introduced powerful APIs for building interactive web applications.
+These features allow browsers to store data, draw graphics, and access device location.
+They make modern websites dynamic without needing external plugins.
+</p>
+
+<h2>Geolocation API</h2>
+
+<p>
+The Geolocation API is used to get the user’s current location.
+It requires user permission before accessing location data.
+It is commonly used in maps and delivery applications.
+</p>
+
+<br>
+
+<fieldset>
+    <legend>Example</legend>
+    <pre>
+&lt;button onclick="getLocation()"&gt;Get Location&lt;/button&gt;
+
+&lt;script&gt;
+function getLocation() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    alert("Latitude: " + position.coords.latitude);
+  });
+}
+&lt;/script&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Drag and Drop</h2>
+
+<p>
+Drag and Drop allows users to move elements on a webpage.
+It improves user interaction and UI experience.
+It uses the draggable attribute.
+</p>
+
+<fieldset>
+    <legend>Code Example</legend>
+    <pre>
+&lt;div draggable="true"&gt;Drag Me&lt;/div&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Local Storage</h2>
+
+<p>
+Local Storage stores data in the browser permanently.
+Data remains even after closing the browser.
+It is useful for saving user preferences.
+</p>
+
+<fieldset>
+    <legend>Code Example</legend>
+    <pre>
+&lt;script&gt;
+localStorage.setItem("username", "Sanjay");
+console.log(localStorage.getItem("username"));
+&lt;/script&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Session Storage</h2>
+
+<p>
+Session Storage stores data temporarily.
+Data is deleted when the browser tab is closed.
+It is useful for temporary user data.
+</p>
+
+<fieldset>
+    <legend>Code Example</legend>
+    <pre>
+&lt;script&gt;
+sessionStorage.setItem("sessionUser", "Guest");
+console.log(sessionStorage.getItem("sessionUser"));
+&lt;/script&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tag: &lt;canvas&gt;</h2>
+
+<p>
+The &lt;canvas&gt; tag is used to draw graphics using JavaScript.
+It is used for games, animations, and charts.
+Canvas requires JavaScript to create shapes.
+</p>
+
+<fieldset>
+    <legend>Code Example</legend>
+    <pre>
+&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillRect(20, 20, 100, 50);
+&lt;/script&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tag: &lt;svg&gt;</h2>
+
+<p>
+SVG stands for Scalable Vector Graphics.
+It is used to create vector-based graphics in HTML.
+SVG graphics do not lose quality when resized.
+</p>
+
+<fieldset>
+    <legend>Example</legend>
+    <pre>
+&lt;svg width="200" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="blue" /&gt;
+&lt;/svg&gt;
+    </pre>
+</fieldset>
+
+<hr>
+
+<a href="html.html">Back</a>
+
+<br><br>
+
+<footer>
+    <p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

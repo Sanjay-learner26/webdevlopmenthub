@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>dom</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h2>DOM (Document Object Model)</h2>
+
+<p>This is where real web development starts.</p>
+
+<strong>What is DOM?</strong>
+
+<p>DOM stands for <abbr title="Document Object Model">DOM</abbr></p>
+
+<b>When a browser loads your HTML page:</b>
+
+<ul>
+<li>It converts HTML into a JavaScript object structure</li>
+<li>Each HTML element becomes an object.</li>
+<li>JavaScript can access and modify those objects</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+&lt;h1 id="title"&gt;Hello&lt;/h1&gt;
+</pre>
+</fieldset>
+
+<p>Browser converts it into a DOM object. JavaScript can now change it.</p>
+
+<h4>Why DOM is Important?</h4>
+
+<strong>DOM allows you to:</strong>
+
+<ul>
+<li>Change text</li>
+<li>Add elements</li>
+<li>Remove elements</li>
+<li>Handle user input</li>
+</ul>
+
+<strong>Without DOM → JavaScript cannot change HTML</strong>
+
+<h4>Selecting Elements</h4>
+
+<p>Before changing something, we must select it.</p>
+
+<strong>getElementById()</strong>
+
+<fieldset>
+<legend>HTML</legend>
+<pre>
+&lt;h1 id="title"&gt;Hello&lt;/h1&gt;
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let heading = document.getElementById("title");
+console.log(heading);
+</pre>
+</fieldset>
+
+<strong>getElementsByClassName()</strong>
+
+<fieldset>
+<legend>HTML</legend>
+<pre>
+&lt;p class="text"&gt;One&lt;/p&gt;
+&lt;p class="text"&gt;Two&lt;/p&gt;
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let elements = document.getElementsByClassName("text");
+console.log(elements);
+</pre>
+</fieldset>
+
+<p>Returns HTMLCollection</p>
+
+<strong>querySelector() (Very Important)</strong>
+
+<p>Selects first matching element.</p>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let element = document.querySelector("#title");
+let element2 = document.querySelector(".text");
+</pre>
+</fieldset>
+
+<strong>querySelectorAll() (Very Important)</strong>
+
+<p>Selects all matching elements.</p>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let elements = document.querySelectorAll(".text");
+</pre>
+</fieldset>
+
+<p>Returns NodeList</p>
+
+<strong>Changing Content</strong>
+
+<b>innerText</b>
+<p>Changes text only.</p>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+heading.innerText = "Welcome Sanjay";
+</pre>
+</fieldset>
+
+<b>innerHTML</b>
+<p>Changes HTML content.</p>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+heading.innerHTML = "&lt;span style='color:red'&gt;Hello&lt;/span&gt;";
+</pre>
+</fieldset>
+
+<strong>innerHTML can insert HTML tags.</strong>
+
+<h4>Changing Styles</h4>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+heading.style.color = "blue";
+heading.style.backgroundColor = "yellow";
+</pre>
+</fieldset>
+
+<u>Better way: Use class.</u>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+heading.classList.add("active");
+</pre>
+</fieldset>
+
+<h4>Working with Classes</h4>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+element.classList.add("box");
+element.classList.remove("box");
+element.classList.toggle("box");
+</pre>
+</fieldset>
+
+<strong>toggle → adds if not present, removes if present.</strong>
+
+<h4>Creating Elements Dynamically</h4>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let newPara = document.createElement("p");
+newPara.innerText = "New Paragraph";
+
+document.body.appendChild(newPara);
+</pre>
+</fieldset>
+
+<b>Used in:</b>
+
+<ul>
+<li>Adding products</li>
+<li>Adding list items</li>
+</ul>
+
+<h4>Removing Elements</h4>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+newPara.remove();
+</pre>
+</fieldset>
+
+<h5>Event Handling (Very Important)</h5>
+
+<p>DOM becomes powerful with events.</p>
+
+<h4>Click Event</h4>
+
+<fieldset>
+<legend>HTML</legend>
+<pre>
+&lt;button id="btn"&gt;Click Me&lt;/button&gt;
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function(){
+  alert("Button Clicked!");
+});
+</pre>
+</fieldset>
+
+<h4>Input Event</h4>
+
+<fieldset>
+<legend>HTML</legend>
+<pre>
+&lt;input type="text" id="name"&gt;
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>JavaScript</legend>
+<pre>
+let input = document.getElementById("name");
+
+input.addEventListener("input", function(){
+  console.log(input.value);
+});
+</pre>
+</fieldset>
+
+</section>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+</body>
+</html>

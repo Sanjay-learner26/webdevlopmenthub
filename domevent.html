@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM & Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>DOM & Event Delegation</h1>
+
+<h3>Event Delegation</h3>
+<p>Add one event listener to parent instead of many children.</p>
+
+<pre>
+let list = document.getElementById("list");
+
+list.addEventListener("click", function(event){
+  if(event.target.tagName === "LI"){
+    console.log(event.target.innerText);
+  }
+});
+</pre>
+
+<h3>preventDefault()</h3>
+<pre>
+document.getElementById("link")
+  .addEventListener("click", function(event){
+    event.preventDefault();
+});
+</pre>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

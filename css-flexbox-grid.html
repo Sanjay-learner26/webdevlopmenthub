@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css flexbox grid</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h2>Flexbox – Important Properties</h2>
+
+<strong>Container Properties</strong>
+
+<ol>
+<li>display: flex;</li>
+</ol>
+
+<p>Makes the element a flex container.</p>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  display: flex;
+}
+</pre>
+</fieldset>
+
+<h2>flex-direction</h2>
+
+<p>Defines direction of items</p>
+
+<b>Values:</b>
+
+<ul>
+<li>row (default)</li>
+<li>column</li>
+<li>row-reverse</li>
+<li>column-reverse</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  flex-direction: column;
+}
+</pre>
+</fieldset>
+
+<h2>justify-content</h2>
+
+<p>Aligns items horizontally.</p>
+
+<b>Values:</b>
+
+<ul>
+<li>flex-start</li>
+<li>flex-end</li>
+<li>center</li>
+<li>space-between</li>
+<li>space-around</li>
+<li>space-evenly</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  justify-content: space-between;
+}
+</pre>
+</fieldset>
+
+<h2>align-items</h2>
+
+<p>Aligns items vertically</p>
+
+<h3>Values:</h3>
+
+<ol>
+<li>stretch</li>
+<li>center</li>
+<li>flex-start</li>
+<li>flex-end</li>
+<li>baseline</li>
+</ol>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  align-items: center;
+}
+</pre>
+</fieldset>
+
+<ol start="5">
+<li>flex-wrap</li>
+</ol>
+
+<p>Controls wrapping.</p>
+
+<b>Values:</b>
+
+<ul>
+<li>nowrap</li>
+<li>wrap</li>
+<li>wrap-reverse</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  flex-wrap: wrap;
+}
+</pre>
+</fieldset>
+
+<h2>Item properties</h2>
+
+<ol start="6">
+<li>flex-grow</li>
+</ol>
+
+<p>Defines how much item grows.</p>
+
+<pre>
+.box {
+  flex-grow: 1;
+}
+</pre>
+
+<ol start="7">
+<li>flex-shrink</li>
+</ol>
+
+<fieldset>
+<pre>
+.box {
+  flex-shrink: 1;
+}
+</pre>
+</fieldset>
+
+<ol start="8">
+<li>flex-basis</li>
+</ol>
+
+<p>Defines initial size.</p>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.box {
+  flex-basis: 100px;
+}
+</pre>
+</fieldset>
+
+<h2>CSS Grid – Important Properties</h2>
+
+<h3>display: grid;</h3>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  display: grid;
+}
+</pre>
+</fieldset>
+
+<h3>grid-template-columns</h3>
+
+<p>Defines column structure.</p>
+
+<fieldset>
+<pre>
+.container {
+  grid-template-columns: 100px 200px 100px;
+}
+</pre>
+</fieldset>
+
+<h3>grid-template-rows</h3>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  grid-template-rows: 100px 100px;
+}
+</pre>
+</fieldset>
+
+<h2>gap</h2>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.container {
+  gap: 10px;
+}
+</pre>
+</fieldset>
+
+<h3>grid-column & grid-row</h3>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+.item {
+  grid-column: 1 / 3;
+}
+</pre>
+</fieldset>
+
+<p>Spans across columns</p>
+
+</section>
+
+<hr>
+
+<a href="css.html">Back</a>
+<footer>
+    <p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

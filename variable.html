@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variable</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<u><p>What is a Variable?</p></u>
+
+<p>A variable is a container used to store data. It allows us to store values like numbers, strings, or objects and use them later.</p>
+
+<h3>Think like</h3>
+<ul>
+<li>Variable = Box</li>
+<li>Value = Item inside the box</li>
+</ul>
+
+<p><u>Why We Need Variables?</u></p>
+
+<ul>
+<li>To store user input</li>
+<li>To store calculations</li>
+<li>To reuse data</li>
+<li>To update values dynamically</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let username = "Sanjay";
+</pre>
+</fieldset>
+
+<h2>Types of Variable Declarations</h2>
+
+<section>
+
+<h3>var (Old method)</h3>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+var age = 20;
+</pre>
+</fieldset>
+
+<h4>Content:</h4>
+<ul>
+<li>Function scoped</li>
+<li>Can be redeclared</li>
+<li>Can be updated</li>
+<li>Hoisted</li>
+</ul>
+
+<strong>Not recommended in modern JavaScript.</strong>
+
+</section>
+
+<section>
+
+<h3>let (Recommended)</h3>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let age = 22;
+</pre>
+</fieldset>
+
+<h4>Content:</h4>
+<ul>
+<li>Block scoped</li>
+<li>Cannot redeclare</li>
+<li>Can update value</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let score = 10;
+score = 20;   // allowed
+</pre>
+</fieldset>
+
+</section>
+
+<section>
+
+<h3>const (Constant)</h3>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+const pi = 3.14;
+</pre>
+</fieldset>
+
+<h4>Content:</h4>
+<ul>
+<li>Block scoped</li>
+<li>Cannot redeclare</li>
+<li>Cannot update</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+const age = 22;
+age = 25; // ❌ Error
+</pre>
+</fieldset>
+
+<h5>Important:</h5>
+<p>If value should not change → use const</p>
+
+<h3>Variable Naming Rules</h3>
+
+<strong>Allowed:</strong>
+<ul>
+<li>Letters</li>
+<li>_</li>
+<li>$</li>
+<li>Numbers (not at start)</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let userName;
+let _count;
+let $price;
+</pre>
+</fieldset>
+
+<strong>Not Allowed:</strong>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let 1name;   // error
+let var;     // reserved keyword
+</pre>
+</fieldset>
+
+</section>
+
+<strong>Best Practices:</strong>
+
+<ul>
+<li>Use meaningful names</li>
+<li>Use camelCase</li>
+<li>Prefer const > let</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let totalPrice = 500;
+</pre>
+</fieldset>
+
+<section>
+
+<h2>DATA TYPES</h2>
+
+<u><p>What is Data Type?</p></u>
+
+<p>Data type defines what kind of value a variable holds.</p>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let name = "Sanjay";   // String
+let age = 22;          // Number
+</pre>
+</fieldset>
+
+<h4>Primitive Data Types</h4>
+
+<h5>String</h5>
+
+<p>Stores text.</p>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let message = "Hello";
+</pre>
+</fieldset>
+
+<h6>Can use:</h6>
+
+<ul>
+<li>""</li>
+<li>''</li>
+<li>`` (backticks)</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let name = "Sanjay";
+console.log(`Hello ${name}`);
+</pre>
+</fieldset>
+
+<h5>Number</h5>
+
+<p>Stores integers and decimals.</p>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let num1 = 10;
+let num2 = 10.5;
+</pre>
+</fieldset>
+
+<h5>Boolean</h5>
+
+<p>let isLoggedIn = true;</p>
+
+<h5>Only:</h5>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+
+<h4>Undefined</h4>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let x;
+console.log(x); // undefined
+</pre>
+</fieldset>
+
+<h4>Null</h4>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let data = null;
+</pre>
+</fieldset>
+
+<p>Represents empty value.</p>
+
+<h4>Non-Primitive Data Types</h4>
+
+<h5>Array</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let colors = ["red", "blue"];
+</pre>
+</fieldset>
+
+<h5>Object</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let person = {
+  name: "Sanjay",
+  age: 22
+};
+</pre>
+</fieldset>
+
+</section>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+<footer>
+     <p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css selector</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h1>CSS Selectors</h1>
+
+<p>
+CSS selectors are used to select (target) HTML elements so we can apply styles to them.
+</p>
+
+<h4>Main Types of CSS Selectors</h4>
+
+<ol>
+<li><strong>Element Selector</strong></li>
+</ol>
+
+<p>Targets all elements of that type.</p>
+
+<fieldset>
+<legend>HTML Example</legend>
+
+<pre>
+&lt;p&gt;Hello World&lt;/p&gt;
+</pre>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>CSS</legend>
+
+<pre>
+p {
+  color: blue;
+}
+</pre>
+</fieldset>
+
+<p><mark>&lt;p&gt; tags become blue</mark></p>
+
+<br>
+
+<b>ID Selector</b>
+
+<p>Used for styling one unique element</p>
+
+<fieldset>
+<legend>HTML Example</legend>
+
+<pre>
+&lt;p id="title"&gt;Hello World&lt;/p&gt;
+</pre>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>CSS</legend>
+
+<pre>
+#title {
+  color: red;
+}
+</pre>
+</fieldset>
+
+<p><mark>ID should be used only once per page.</mark></p>
+
+<br>
+
+<b>Class Selector (.)</b>
+
+<p>Used for styling multiple elements</p>
+
+<fieldset>
+<legend>HTML Example</legend>
+
+<pre>
+&lt;p class="text"&gt;First Paragraph&lt;/p&gt;
+&lt;p class="text"&gt;Second Paragraph&lt;/p&gt;
+</pre>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>CSS</legend>
+
+<pre>
+.text {
+  color: green;
+}
+</pre>
+</fieldset>
+
+<p><mark>Both paragraphs turn green.</mark></p>
+
+<br>
+
+<b>Universal Selector (*)</b>
+
+<p>Targets everything</p>
+
+<fieldset>
+<legend>CSS</legend>
+
+<pre>
+* {
+  margin: 0;
+}
+</pre>
+</fieldset>
+
+<p><mark>Used to remove default spacing.</mark></p>
+
+<br>
+
+<b>Group Selector</b>
+
+<p>Style multiple elements together.</p>
+
+<fieldset>
+<legend>CSS</legend>
+
+<pre>
+h1, h2, p {
+  color: purple;
+}
+</pre>
+</fieldset>
+
+</section>
+
+<hr>
+
+<a href="css.html">Back</a>
+
+<br><br>
+
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

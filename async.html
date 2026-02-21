@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Async JavaScript</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Async JavaScript</h1>
+
+<h3>What is Asynchronous JavaScript?</h3>
+
+<p>
+JavaScript normally runs line by line. But async tasks run in background.
+</p>
+
+<h4>Example:</h4>
+
+<pre>
+console.log("Start");
+
+setTimeout(function(){
+  console.log("After 2 seconds");
+}, 2000);
+
+console.log("End");
+</pre>
+
+<h4>Promises</h4>
+
+<pre>
+let promise = new Promise(function(resolve, reject){
+  resolve("Success");
+});
+</pre>
+
+<h4>async / await</h4>
+
+<pre>
+async function getData(){
+  return "Data Loaded";
+}
+</pre>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

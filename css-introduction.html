@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css intro</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Learn Css</h1>
+
+<blockquote>
+"CSS turns plain structure into beautiful design."
+</blockquote>
+
+<hr>
+
+<b>What is Css ?</b>
+
+<p>CSS is a styling language used to design and style web pages.</p>
+
+<ul>
+    <li>CSS stands for Cascading Style Sheet.</li>
+    <li>CSS describes how HTML elements are displayed on screen, paper, or other media.</li>
+    <li>CSS saves time by controlling layout of multiple pages.</li>
+    <li>External stylesheets are stored in CSS files.</li>
+</ul>
+
+<br>
+
+<b>Why Css is used?</b>
+
+<p>CSS (Cascading Style Sheets) is used to style and design web pages.</p>
+
+<u><i>Main reasons CSS is used</i></u>
+
+<ol>
+    <li><strong>To Add Colors</strong></li>
+</ol>
+
+<ul>
+    <li>Text color</li>
+    <li>Background color</li>
+    <li>Button colors</li>
+</ul>
+
+<br>
+
+<ol start="2">
+    <li><strong>To Change Fonts & Text Style</strong></li>
+</ol>
+
+<ul>
+    <li>Font size</li>
+    <li>Font family</li>
+    <li>Bold, spacing, alignment</li>
+</ul>
+
+<br>
+
+<ol start="3">
+    <li><strong>Control Layout</strong></li>
+</ol>
+
+<ul>
+    <li>Position elements</li>
+    <li>Create columns</li>
+    <li>Add spacing (margin, padding)</li>
+    <li>Arrange items using Flexbox & Grid</li>
+</ul>
+
+<br>
+
+<ol start="4">
+    <li><strong>To Make Websites Responsive</strong></li>
+</ol>
+
+<table border="1" cellpadding="5">
+<tr>
+    <td>Adjust design for:</td>
+</tr>
+<tr><td>Mobile 📱</td></tr>
+<tr><td>Tablet</td></tr>
+<tr><td>Desktop 💻</td></tr>
+</table>
+
+<br>
+
+<ol start="5">
+    <li><strong>To Separate Design from Structure</strong></li>
+</ol>
+
+<ul>
+    <li>HTML → Structure</li>
+    <li>CSS → Design</li>
+</ul>
+
+<hr>
+
+<b>Types of CSS</b>
+
+<ul>
+    <li>Inline CSS</li>
+    <li>Internal CSS</li>
+    <li>External CSS</li>
+</ul>
+
+<!-- Inline CSS Section -->
+
+<section>
+<h2>Inline CSS</h2>
+
+<p>
+Inline CSS means writing CSS directly inside an HTML tag using the style attribute.
+</p>
+
+<fieldset>
+<legend>Syntax</legend>
+
+<pre>
+&lt;tag style="property: value;"&gt;Content&lt;/tag&gt;
+</pre>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+&lt;p style="color:red;"&gt;This is red text&lt;/p&gt;
+</pre>
+</fieldset>
+</section>
+
+<hr>
+
+<!-- Internal CSS Section -->
+
+<section>
+<h2>Internal CSS</h2>
+
+<p>
+Internal CSS is written inside the same HTML file using the &lt;style&gt; tag inside the &lt;head&gt; section.
+</p>
+
+<fieldset>
+<legend>Syntax</legend>
+
+<pre>
+&lt;head&gt;
+&lt;style&gt;
+selector {
+    property: value;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+</pre>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Example</legend>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Internal CSS Example&lt;/title&gt;
+
+&lt;style&gt;
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 18px;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is styled using internal CSS.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</fieldset>
+</section>
+
+<br>
+<hr>
+
+<section>
+<h2>External CSS</h2>
+
+<p>
+External CSS is written in a separate .css file and linked using the &lt;link&gt; tag.
+</p>
+
+<table border="1" cellpadding="5">
+<tr><td>Used when:</td></tr>
+<tr><td>You have multiple pages.</td></tr>
+<tr><td>You want clean structure.</td></tr>
+<tr><td>You want reusable styles.</td></tr>
+</table>
+
+<fieldset>
+<legend>Syntax for HTML file</legend>
+
+<pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+</pre>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Syntax for CSS file</legend>
+
+<pre>
+selector {
+    property: value;
+}
+</pre>
+</fieldset>
+</section>
+
+<hr>
+
+<a href="css.html">Back</a>
+
+<br><br>
+
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

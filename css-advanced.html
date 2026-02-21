@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css advanced</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h2>Transition – Important Properties</h2>
+
+<h3>transition-property</h3>
+<fieldset>
+<pre>
+transition-property: background;
+</pre>
+</fieldset>
+
+<h3>transition-duration</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+transition-duration: 1s;
+</pre>
+</fieldset>
+
+<h3>transition-timing-function</h3>
+
+<h4>Values:</h4>
+<ul>
+<li>ease</li>
+<li>linear</li>
+<li>ease-in</li>
+<li>ease-out</li>
+<li>ease-in-out</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+transition-timing-function: ease-in-out;
+</pre>
+</fieldset>
+
+<h3>transition-delay</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+transition-delay: 0.5s;
+</pre>
+</fieldset>
+
+</section>
+
+<section>
+
+<h2>Transform – Important Functions</h2>
+
+<h3>scale()</h3>
+<fieldset>
+<legend>Example:</legend>
+<pre>
+transform: scale(1.2);
+</pre>
+</fieldset>
+
+<h3>rotate()</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+transform: rotate(45deg);
+</pre>
+</fieldset>
+
+<h3>translate()</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+transform: translate(50px, 0);
+</pre>
+</fieldset>
+
+<h3>skew()</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+transform: skew(20deg);
+</pre>
+</fieldset>
+
+</section>
+
+<section>
+
+<h2>Animation – Important Properties</h2>
+
+<h3>@keyframes</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+@keyframes move {
+  from { left: 0; }
+  to { left: 200px; }
+}
+</pre>
+</fieldset>
+
+<h2>animation-name</h2>
+<fieldset>
+<legend>Example</legend>
+<pre>
+animation-name: move;
+</pre>
+</fieldset>
+
+<h3>animation-duration</h3>
+<fieldset>
+<legend>Example</legend>
+<pre>
+animation-duration: 2s;
+</pre>
+</fieldset>
+
+<h2>animation-iteration-count</h2>
+<fieldset>
+<legend>Example</legend>
+<pre>
+animation-iteration-count: infinite;
+</pre>
+</fieldset>
+
+<h2>animation-direction</h2>
+
+<h3>Values</h3>
+<ul>
+<li>normal</li>
+<li>reverse</li>
+<li>alternate</li>
+</ul>
+
+<fieldset>
+<pre>
+animation-direction: alternate;
+</pre>
+</fieldset>
+
+</section>
+
+<section>
+
+<h2>Z-Index</h2>
+<p>Works only with positioned elements.</p>
+
+<pre>
+.box {
+  position: absolute;
+  z-index: 10;
+}
+</pre>
+
+<p>Higher number = on top.</p>
+
+</section>
+
+<section>
+
+<h2>Overflow</h2>
+
+<h3>Values:</h3>
+<ul>
+<li>visible</li>
+<li>hidden</li>
+<li>scroll</li>
+<li>auto</li>
+</ul>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+div {
+  overflow: auto;
+}
+</pre>
+</fieldset>
+
+</section>
+
+<section>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+:root {
+  --primary-color: blue;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+</pre>
+</fieldset>
+
+</section>
+
+<h2>Box-Sizing</h2>
+<p>Very important modern property.</p>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+* {
+  box-sizing: border-box;
+}
+</pre>
+
+<p>Includes padding & border inside width.</p>
+</fieldset>
+
+<h2>Opacity</h2>
+<fieldset>
+<legend>Example</legend>
+<pre>
+opacity: 0.5;
+</pre>
+</fieldset>
+
+<h2>Cursor</h2>
+<fieldset>
+<legend>Example</legend>
+<pre>
+cursor: pointer;
+</pre>
+</fieldset>
+
+<h2>Box-Shadow</h2>
+<fieldset>
+<legend>Example</legend>
+<pre>
+box-shadow: 5px 5px 10px gray;
+</pre>
+</fieldset>
+
+<hr>
+
+<a href="css.html">Back</a>
+<footer>
+    <p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

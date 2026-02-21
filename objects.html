@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>objects</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<section>
+
+<h4>OBJECTS</h4>
+
+<strong>What is an Object?</strong>
+<p>An object is a data structure used to store related data in key–value pairs.</p>
+
+<b>Person → has name, age, city</b><br>
+<b>Car → has brand, model, price</b>
+
+<p>So, we group related data inside one structure.</p>
+
+<strong>Real life example:</strong>
+
+<fieldset>
+<legend>Instead of:</legend>
+<pre>
+let name = "Sanjay";
+let age = 22;
+let city = "Chennai";
+</pre>
+</fieldset>
+
+<fieldset>
+<legend>We use:</legend>
+<pre>
+let person = {
+  name: "Sanjay",
+  age: 22,
+  city: "Chennai"
+};
+</pre>
+</fieldset>
+
+<b>Here:</b>
+<ul>
+<li>name → key</li>
+<li>"Sanjay" → value</li>
+</ul>
+
+<h5>Why Objects Are Important?</h5>
+
+<ul>
+<li>Used to represent real-world entities</li>
+<li>Used in APIs</li>
+<li>Used in databases</li>
+<li>Used in JSON</li>
+</ul>
+
+<strong>In real web projects, 80% of data is objects.</strong>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+{
+  id: 1,
+  title: "Product",
+  price: 500
+}
+</pre>
+</fieldset>
+
+<h4>Creating Objects</h4>
+
+<h5>Method 1: Object Literal (Most Common)</h5>
+
+<fieldset>
+<legend>Example</legend>
+<pre>
+let student = {
+  name: "Sanjay",
+  age: 22,
+  isStudent: true
+};
+</pre>
+</fieldset>
+
+<h5>Method 2: Using new Object()</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let student = new Object();
+student.name = "Sanjay";
+student.age = 22;
+</pre>
+</fieldset>
+
+<strong>Not commonly used.</strong>
+
+<h4>Accessing Object Properties</h4>
+
+<h5>Dot Notation (Recommended)</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+console.log(student.name);
+</pre>
+</fieldset>
+
+<h5>Bracket Notation</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+console.log(student["age"]);
+</pre>
+</fieldset>
+
+<strong>When to use bracket?</strong>
+<ul>
+<li>When key is dynamic</li>
+<li>When key has spaces</li>
+</ul>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let user = {
+  "full name": "Sanjay S"
+};
+
+console.log(user["full name"]);
+</pre>
+</fieldset>
+
+<h5>Adding New Properties</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+student.city = "Chennai";
+</pre>
+</fieldset>
+
+<h5>Updating Properties</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+student.age = 23;
+</pre>
+</fieldset>
+
+<h5>Deleting Properties</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+delete student.isStudent;
+</pre>
+</fieldset>
+
+<h5>Object Methods</h5>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let person = {
+  name: "Sanjay",
+  greet: function(){
+    console.log("Hello " + this.name);
+  }
+};
+
+person.greet();
+</pre>
+</fieldset>
+
+<h5>this Keyword</h5>
+
+<p>this refers to the current object.</p>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+this.name
+</pre>
+</fieldset>
+
+<p>The name inside this object.</p>
+
+<strong>Important:</strong>
+<p>this behaves differently in arrow functions.</p>
+
+<h5>Looping Through Objects</h5>
+
+<strong>Using for...in</strong>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+for(let key in student){
+  console.log(key + " : " + student[key]);
+}
+</pre>
+</fieldset>
+
+<h5>Object Destructuring (ES6)</h5>
+
+<p>Extract values easily.</p>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let person = {
+  name: "Sanjay",
+  age: 22
+};
+
+let {name, age} = person;
+
+console.log(name);
+</pre>
+</fieldset>
+
+<strong>Why use?</strong>
+
+<ul>
+<li>Used heavily in React</li>
+</ul>
+
+<h4>Spread Operator (...)</h4>
+
+<p>Used to copy objects</p>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let person = {
+  name: "Sanjay",
+  age: 22
+};
+
+let newPerson = {...person};
+</pre>
+</fieldset>
+
+<strong>Used in:</strong>
+<ul>
+<li>Updating state</li>
+<li>Merging objects</li>
+</ul>
+
+<h5>Object Inside Array</h5>
+
+<p>Real project structure:</p>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+let users = [
+  {id:1, name:"Sanjay"},
+  {id:2, name:"Ravi"}
+];
+</pre>
+</fieldset>
+
+<h6>Access</h6>
+
+<fieldset>
+<legend>Example:</legend>
+<pre>
+console.log(users[0].name);
+</pre>
+</fieldset>
+
+<strong>Used in:</strong>
+<ul>
+<li>Product listing</li>
+<li>User list</li>
+<li>Cart system</li>
+</ul>
+
+</section>
+
+<hr>
+
+<a href="javascript.html">Back</a>
+
+<footer>
+<p>&copy; 2026 Web Development Hub</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>TABLES</h1>
+
+<p>
+Tables are used to display data in rows and columns.
+They are useful for structured information like marks, prices, and schedules.
+Tables contain rows (&lt;tr&gt;) and cells (&lt;td&gt; or &lt;th&gt;).
+</p>
+
+<br>
+
+<h2>Tag: &lt;table&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+Defines the table container.
+All table content must be inside this tag.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;table border="1"&gt;
+&lt;/table&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tag: &lt;tr&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+Defines a table row. Each row contains cells.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;tr&gt;
+&lt;/tr&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tags: &lt;th&gt; and &lt;td&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+&lt;th&gt; defines header cells (bold and centered).  
+&lt;td&gt; defines normal data cells.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;tr&gt;
+   &lt;th&gt;Name&lt;/th&gt;
+   &lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Attributes: rowspan & colspan</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+rowspan merges rows. colspan merges columns.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h3>Full Combined Example</h3>
+
+<fieldset>
+    <legend>HTML</legend>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Table Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+   &lt;h1&gt;Student Table&lt;/h1&gt;
+
+   &lt;table border="1"&gt;
+      &lt;tr&gt;
+         &lt;th&gt;Name&lt;/th&gt;
+         &lt;th&gt;Age&lt;/th&gt;
+      &lt;/tr&gt;
+
+      &lt;tr&gt;
+         &lt;td&gt;Sanjay&lt;/td&gt;
+         &lt;td&gt;22&lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr&gt;
+         &lt;td colspan="2"&gt;End of Data&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h3>Output Explanation</h3>
+
+<strong>The page shows:</strong>
+
+<ul>
+    <li>A table with two columns</li>
+    <li>Student name and age</li>
+    <li>Last row merges two columns</li>
+</ul>
+
+<hr>
+
+<a href="html.html">Back</a>
+
+<br><br>
+
+<footer>
+    <p>&copy; 2026 Web Development Hub </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+
+<body>
+    <section>
+    <h4>ARRAYS</h4>
+    <strong>What is an Array?</strong>
+    <p>An array is a special variable that can store multiple values in a single variable.</p>
+    <b>Instead of:</b>
+    <fieldset>
+        <legend>Example:</legend>
+        <pre>
+            let name1 = "Sanjay";
+let name2 = "Ravi";
+let name3 = "Kumar";
+
+        </pre>
+    </fieldset>
+    <h5>We use:</h5>
+    <fieldset>
+        <legend>Example:</legend>
+        <pre>
+            let names = ["Sanjay", "Ravi", "Kumar"];
+
+        </pre>
+    </fieldset>
+    <h4>Creating Arrays</h4>
+    <fieldset>
+        <legend>
+            Example:
+        </legend>
+        <pre>
+            let numbers = [10, 20, 30];
+let mixed = ["Sanjay", 22, true];
+
+        </pre>
+    </fieldset>
+    <h4>Accessing Array Elements</h4>
+    <p>Arrays use index (starts from 0)</p>
+    <fieldset>
+      <legend>Example:</legend>
+      <pre>
+        let colors = ["red", "blue", "green"];
+
+console.log(colors[0]); // red
+console.log(colors[1]); // blue
+
+
+      </pre>
+    </fieldset>
+    <h4>
+        Changing Values
+    </h4>
+    <fieldset>
+        <legend>
+            Example:
+        </legend>
+        <pre>
+            colors[1] = "yellow";
+console.log(colors);
+
+        </pre>
+    </fieldset>
+    <h4>
+        length Property
+    </h4>
+    <fieldset>
+        <legend>
+            Example:
+        </legend>
+        <pre>
+            let arr = [1,2,3,4];
+console.log(arr.length); // 4
+
+        </pre>
+    </fieldset>
+    <h4>Looping Through Arrays</h4>
+    <h5>Using for loop</h5>
+    <fieldset>
+        <legend>
+            Example:
+        </legend>
+        <pre>
+            let nums = [10,20,30];
+
+for(let i = 0; i < nums.length; i++){
+  console.log(nums[i]);
+}
+
+        </pre>
+    </fieldset>
+    <h4>Using for...of</h4>
+    <fieldset>
+        <legend>
+            Example:
+        </legend>
+        <pre>
+            for(let value of nums){
+  console.log(value);
+}
+
+        </pre>
+    </fieldset>
+    <h4>Adding & Removing Elements</h4>
+    <h5>push() → Add at end</h5>
+    <fieldset>
+        <legend>Example:</legend>
+        <pre>
+            let arr = [1,2];
+arr.push(3);
+
+        </pre>
+    </fieldset>
+    <h5>pop() → Remove last</h5>
+    <fieldset>
+        <legend>Example:</legend>
+        <pre>
+            arr.pop();
+
+        </pre>
+    </fieldset>
+    <h5>unshift() → Add at start</h5>
+    <fieldset>
+        <legend>Example:</legend>
+        <pre>
+            arr.unshift(0);
+
+        </pre>
+    </fieldset>
+    <h5>shift() → Remove first</h5>
+    <fieldset>
+        <legend>Example:</legend>
+        <pre>
+            arr.shift();
+
+        </pre>
+    </fieldset>
+    <h5>Advanced Important Methods</h5>
+    <strong>map()</strong>
+        <p>Creates new array.</p>
+        <fieldset>
+            <legend>Example:</legend>
+            <pre>
+                let nums = [1,2,3];
+
+let doubled = nums.map(function(num){
+  return num * 2;
+});
+
+console.log(doubled); // [2,4,6]
+
+            </pre>
+        </fieldset>
+        <p>Used when transforming data.</p>
+        <strong>filter()</strong>
+        <p>Filters values.</p>
+        <fieldset>
+            <legend>Example:</legend>
+            <pre>
+                let nums = [10, 25, 30, 15];
+
+let result = nums.filter(function(num){
+  return num > 20;
+});
+
+console.log(result); // [25,30]
+
+            </pre>
+        </fieldset>
+        <p>Used in search, filtering products.</p>
+        <strong>reduce()</strong>
+        <p>Reduces to single value</p>
+        <fieldset>
+            <legend>Example:</legend>
+            <pre>
+                let nums = [1,2,3,4];
+
+let sum = nums.reduce(function(total, num){
+  return total + num;
+}, 0);
+
+console.log(sum); // 10
+
+            </pre>
+        </fieldset>
+        <p>Used in cart total calculation.</p>
+        <strong>find()</strong>
+        <p>Returns first matching element.</p>
+        <fieldset>
+            <legend>Example:</legend>
+            <pre>
+                let users = [
+  {id:1, name:"Sanjay"},
+  {id:2, name:"Ravi"}
+];
+
+let user = users.find(function(u){
+  return u.id === 2;
+});
+
+console.log(user);
+
+            </pre>
+        </fieldset>
+        <strong>includes()</strong>
+        <fieldset>
+            <legend>Example:</legend>
+            <pre>
+                let fruits = ["apple","banana"];
+
+console.log(fruits.includes("banana")); // true
+
+            </pre>
+        </fieldset>
+        <strong>Array of Objects</strong>
+        <p>This is real project structure.</p>
+        <fieldset>
+            <legend>
+                Example:
+            </legend>
+            <pre>
+                let products = [
+  {id:1, name:"Shirt", price:500},
+  {id:2, name:"Shoes", price:1000}
+];
+
+            </pre>
+        </fieldset>
+        <h5>Accessing:</h5>
+        <fieldset>
+            <legend>Example:</legend>
+            <pre>
+                console.log(products[0].name);
+
+            </pre>
+        </fieldset>
+
+          <a href="javascript.html">Back</a>
+          <footer>
+    <p>&copy; 2026 Web Development Hub </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>IMAGES & MULTIMEDIA</h1>
+
+<p>
+Images and multimedia make webpages attractive and interactive.
+HTML allows us to add images, audio, videos, and external content.
+These elements improve user experience.
+</p>
+
+<br>
+
+<h2>Tag: &lt;img&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+The &lt;img&gt; tag is used to display images.
+It requires src (image path) and alt (alternative text).
+It is a self-closing tag.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;img src="photo.jpg" alt="Sample Image"&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tag: &lt;audio&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+The &lt;audio&gt; tag adds sound to a webpage.
+The controls attribute adds play/pause buttons.
+Audio files are added using &lt;source&gt;.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;audio controls&gt;
+   &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tag: &lt;video&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+The &lt;video&gt; tag displays videos.
+The controls attribute shows video controls.
+Supports multiple formats using &lt;source&gt;.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;video width="300" controls&gt;
+   &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h2>Tag: &lt;iframe&gt;</h2>
+
+<h3>Tag Explanation</h3>
+
+<p>
+The &lt;iframe&gt; tag embeds another webpage inside your page.
+Commonly used to embed YouTube videos or maps.
+It requires a src attribute.
+</p>
+
+<fieldset>
+    <legend>Code Example:</legend>
+    <pre>
+&lt;iframe width="300" height="200"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"&gt;
+&lt;/iframe&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h3>Full Combined Example</h3>
+
+<fieldset>
+    <legend>HTML</legend>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Images and Multimedia&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+   &lt;h1&gt;Media Example&lt;/h1&gt;
+
+   &lt;h2&gt;Image&lt;/h2&gt;
+   &lt;img src="photo.jpg" alt="Profile Photo" width="200"&gt;
+
+   &lt;h2&gt;Audio&lt;/h2&gt;
+   &lt;audio controls&gt;
+      &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+   &lt;/audio&gt;
+
+   &lt;h2&gt;Video&lt;/h2&gt;
+   &lt;video width="300" controls&gt;
+      &lt;source src="video.mp4" type="video/mp4"&gt;
+   &lt;/video&gt;
+
+   &lt;h2&gt;YouTube Video&lt;/h2&gt;
+   &lt;iframe width="300" height="200"
+   src="https://www.youtube.com/embed/dQw4w9WgXcQ"&gt;
+   &lt;/iframe&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</fieldset>
+
+<br>
+
+<h3>Output Explanation</h3>
+
+<strong>The page shows:</strong>
+
+<ul>
+    <li>An image</li>
+    <li>An audio player</li>
+    <li>A video player</li>
+    <li>An embedded YouTube video</li>
+</ul>
+
+<hr>
+
+<a href="html.html">Back</a>
+
+<br><br>
+
+<footer>
+    <p>&copy; 2026 Web Development Hub </p>
+</footer>
+
+</body>
+</html>
